@@ -1,3 +1,4 @@
+
 import Board
 
 def make_move(player):
@@ -8,8 +9,7 @@ def make_move(player):
 
         if player == 1:
 
-            place = int(input("Where would you like to place X ? \n"
-                          "1 - 9: "))
+            place = int(input("Where would you like to place X ? \n1 - 9: "))
 
             if 1 <= place <= 9 and Board.board[place - 1] == "E":
 
@@ -21,8 +21,7 @@ def make_move(player):
 
         else:
 
-            place = int(input("Where would you like to place O ? \n"
-                          "1 - 9: "))
+            place = int(input("Where would you like to place O ? \n1 - 9: "))
 
             if 1 <= place <= 9 and Board.board[place - 1] == "E":
 
@@ -32,5 +31,4 @@ def make_move(player):
             else:
                 success = False
 
-
-
+# TODO: catch data type errors

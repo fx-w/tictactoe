@@ -4,3 +4,5 @@ def switch_player(player):
         return 2
     else:
         return 1
+
+# TODO maybe make the player a boolean

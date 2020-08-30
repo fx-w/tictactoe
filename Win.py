@@ -1,8 +1,6 @@
 
 import Board
 
-winner = 0
-
 # Player 1 win conditions:
 
 def check_win():
@@ -58,3 +56,5 @@ def check_win():
 
     else:
         return False
+
+# TODO: Check if its a tie
