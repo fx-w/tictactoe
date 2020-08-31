@@ -5,6 +5,7 @@ import Board
 import Player
 import Win
 import Move
+from Bcolors import bcolors
 
 player = 2                                                                  # this player starts not
 
@@ -27,7 +28,7 @@ while not Win.check_win():                                                  # ga
     Move.make_move(player)
 
 
-print("\nYou won player " + str(player) + "! Congrats!\n")                  # winning dialog
+print(f"˜{bcolors.BOLD}\nYou won player " + str(player) + f"! Congrats!\n{bcolors.ENDC}")                  # winning dialog
 
 Board.print_board()                                                         # show winning Board
 
