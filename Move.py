@@ -18,6 +18,7 @@ def make_move(player):
 
             else:
                 success = False
+                # please enter valid stuff (print)
 
         else:
 
