@@ -4,54 +4,54 @@ import Board
 # Player 1 win conditions:
 
 def check_win():
-    if Board.board[0] == "O" and Board.board[1] == "O" and Board.board[2] == "O":
+    if "O" in Board.board[0] and "O" in Board.board[1] and "O" in Board.board[2]:
         return True
 
-    elif Board.board[3] == "O" and Board.board[4] == "O" and Board.board[5] == "O":
+    elif "O" in Board.board[3] and "O" in Board.board[4] and "O" in Board.board[5]:
         return True
 
-    elif Board.board[6] == "O" and Board.board[7] == "O" and Board.board[8] == "O":
+    elif "O" in Board.board[6] and "O" in Board.board[7] and "O" in Board.board[8]:
         return True
 
-    elif Board.board[0] == "O" and Board.board[3] == "O" and Board.board[6] == "O":
+    elif "O" in Board.board[0] and "O" in Board.board[3] and "O" in Board.board[6]:
         return True
 
-    elif Board.board[1] == "O" and Board.board[4] == "O" and Board.board[7] == "O":
+    elif "O" in Board.board[1] and "O" in Board.board[4] and "O" in Board.board[7]:
         return True
 
-    elif Board.board[2] == "O" and Board.board[5] == "O" and Board.board[8] == "O":
+    elif "O" in Board.board[2] and "O" in Board.board[5] and "O" in Board.board[8]:
         return True
 
-    elif Board.board[0] == "O" and Board.board[4] == "O" and Board.board[8] == "O":
+    elif "O" in Board.board[0] and "O" in Board.board[4] and "O" in Board.board[8]:
         return True
 
-    elif Board.board[2] == "O" and Board.board[4] == "O" and Board.board[6] == "O":
+    elif "O" in Board.board[2] and "O" in Board.board[4] and "O" in Board.board[6]:
         return True
 
     # Player 2 win conditions: 
 
-    if Board.board[0] == "X" and Board.board[1] == "X" and Board.board[2] == "X":
+    if "X" in Board.board[0] and "X" in Board.board[1] and "X" in Board.board[2]:
         return True
 
-    elif Board.board[3] == "X" and Board.board[4] == "X" and Board.board[5] == "X":
+    elif "X" in Board.board[3] and "X" in Board.board[4] and "X" in Board.board[5]:
         return True
 
-    elif Board.board[6] == "X" and Board.board[7] == "X" and Board.board[8] == "X":
+    elif "X" in Board.board[6] and "X" in Board.board[7] and "X" in Board.board[8]:
         return True
 
-    elif Board.board[0] == "X" and Board.board[3] == "X" and Board.board[6] == "X":
+    elif "X" in Board.board[0] and "X" in Board.board[3] and "X" in Board.board[6]:
         return True
 
-    elif Board.board[1] == "X" and Board.board[4] == "X" and Board.board[7] == "X":
+    elif "X" in Board.board[1] and "X" in Board.board[4] and "X" in Board.board[7]:
         return True
 
-    elif Board.board[2] == "X" and Board.board[5] == "X" and Board.board[8] == "X":
+    elif "X" in Board.board[2] and "X" in Board.board[5] and "X" in Board.board[8]:
         return True
 
-    elif Board.board[0] == "X" and Board.board[4] == "X" and Board.board[8] == "X":
+    elif "X" in Board.board[0] and "X" in Board.board[4] and "X" in Board.board[8]:
         return True
 
-    elif Board.board[2] == "X" and Board.board[4] == "X" and Board.board[6] == "X":
+    elif "X" in Board.board[2] and "X" in Board.board[4] and "X" in Board.board[6]:
         return True
 
     else:
