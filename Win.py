@@ -1,17 +1,20 @@
 import Board
 
-# Tie
 
 def check_tie():
+
+    # tie conditions
+
     if "E" not in Board.board:
         return True
     else:
         return False
 
 
-# Player 1 win conditions:
-
 def check_win():
+
+    # Player 1 win conditions:
+
     if "O" in Board.board[0] and "O" in Board.board[1] and "O" in Board.board[2]:
         return True
 
@@ -36,7 +39,7 @@ def check_win():
     elif "O" in Board.board[2] and "O" in Board.board[4] and "O" in Board.board[6]:
         return True
 
-# Player 2 win conditions:
+    # Player 2 win conditions:
 
     if "X" in Board.board[0] and "X" in Board.board[1] and "X" in Board.board[2]:
         return True

@@ -1,4 +1,3 @@
-
 board = ["E", "E", "E", "E", "E", "E", "E", "E", "E"]               # all fields are stored in a list
 
 
