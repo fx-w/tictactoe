@@ -6,13 +6,13 @@ from Bcolors import bcolors
 
 player = 2                                                                  # this player starts not
 
-print("Hello! This is a TicTacToe Game! Have Fun!")                         # dialog at start of game
+print(f"{bcolors.BOLD}\nHello! This is a TicTacToe Game! Have Fun!{bcolors.ENDC}")          # dialog at start of game
 
 while not Win.check_win() and not Win.check_tie():                          # game will run until someone wins or ties
 
     player = Player.switch_player(player)                                   # switch the active player
 
-    turn_dialog = "\n\nPlayer " + str(player) + " its your turn!\n"         # generating the dialog before each turn
+    turn_dialog = "\nPlayer " + str(player) + " its your turn!\n"           # generating the dialog before each turn
 
     print(turn_dialog)                                                      # tell the player that it is his turn
     Board.print_board()                                                     # show the current state of the board
@@ -24,5 +24,5 @@ if Win.check_win():                                                             
     Board.print_board()                                                                         # show winning Board
 
 elif Win.check_tie():                                                                           # check if tie
-    print(f"{bcolors.BOLD}It's a tie!{bcolors.ENDC}")                                           # tie dialog
+    print(f"{bcolors.BOLD}\nIt's a tie!\n{bcolors.ENDC}")                                           # tie dialog
     Board.print_board()                                                                         # show tie Board
