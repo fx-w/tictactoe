@@ -19,7 +19,7 @@ def make_move(player):
                 success = False
 
 
-        else:  # player must be 2
+        else:
 
             try:
 

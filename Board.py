@@ -1,5 +1,5 @@
 
-board = ["E", "E", "E", "E", "E", "E", "E", "E", "E"]               # different fields are stored in a list
+board = ["E", "E", "E", "E", "E", "E", "E", "E", "E"]               # all fields are stored in a list
 
 
 def print_board():                                                  # prints out the board nicely formatted
