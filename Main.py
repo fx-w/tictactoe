@@ -6,7 +6,7 @@ from Bcolors import bcolors
 
 player = 2                                                                  # this player starts not
 
-print(f"{bcolors.BOLD}\nHello! This is a TicTacToe Game! Have Fun!{bcolors.ENDC}")          # dialog at start of game
+print(f"{bcolors.BOLD}\nHello! This is a TicTacToe Game! Have Fun!{bcolors.ENDC}")              # first dialog
 
 while not Win.check_win() and not Win.check_tie():                          # game will run until someone wins or ties
 
@@ -24,5 +24,5 @@ if Win.check_win():                                                             
     Board.print_board()                                                                         # show winning Board
 
 elif Win.check_tie():                                                                           # check if tie
-    print(f"{bcolors.BOLD}\nIt's a tie!\n{bcolors.ENDC}")                                           # tie dialog
+    print(f"{bcolors.BOLD}\nIt's a tie!\n{bcolors.ENDC}")                                       # tie dialog
     Board.print_board()                                                                         # show tie Board
